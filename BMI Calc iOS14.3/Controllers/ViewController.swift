@@ -39,6 +39,7 @@ class ViewController: UIViewController {
         
         print(String(format: "%.1f", bmi))
         print(bmi)
+        
 
     }
 }

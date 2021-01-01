@@ -133,10 +133,10 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="103.79464285714285"/>
         </scene>
-        <!--View Controller-->
+        <!--Result View Controller-->
         <scene sceneID="fwP-tU-8gT">
             <objects>
-                <viewController id="b3t-Fz-ri8" customClass="ViewController" customModule="BMI_Calc_iOS14_3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="b3t-Fz-ri8" customClass="ResultViewController" customModule="BMI_Calc_iOS14_3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8zc-LG-jNx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -178,6 +178,9 @@
                                 <state key="normal" title="RECALCULATE">
                                     <color key="titleColor" red="0.30512887239999997" green="0.29690739510000003" blue="0.50005441900000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="recalculatePressed:" destination="b3t-Fz-ri8" eventType="touchUpInside" id="z6O-0i-pnu"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="oiT-ci-OE5"/>
@@ -194,6 +197,10 @@
                             <constraint firstItem="oiT-ci-OE5" firstAttribute="bottom" secondItem="v7n-tX-i73" secondAttribute="bottom" id="tgh-cA-6Rk"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bmiHintLabel" destination="sJY-2U-YnE" id="H3M-zm-YUl"/>
+                        <outlet property="bmiLabel" destination="myN-IU-ewr" id="T5W-lf-9Hl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TM3-b6-lOp" sceneMemberID="firstResponder"/>
             </objects>

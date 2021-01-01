@@ -13,6 +13,7 @@
 		C1208654259F81780011CEBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1208652259F81780011CEBE /* Main.storyboard */; };
 		C1208656259F81810011CEBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1208655259F81810011CEBE /* Assets.xcassets */; };
 		C1208659259F81810011CEBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1208657259F81810011CEBE /* LaunchScreen.storyboard */; };
+		C120866F259FDC760011CEBE /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C120866E259FDC760011CEBE /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C1208655259F81810011CEBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1208658259F81810011CEBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C120865A259F81810011CEBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C120866E259FDC760011CEBE /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +58,9 @@
 		C120864B259F81780011CEBE /* BMI Calc iOS14.3 */ = {
 			isa = PBXGroup;
 			children = (
-				C1208667259FC6390011CEBE /* Controllers */,
-				C1208666259FC62B0011CEBE /* Views */,
 				C1208665259FC61C0011CEBE /* Models */,
+				C1208666259FC62B0011CEBE /* Views */,
+				C1208667259FC6390011CEBE /* Controllers */,
 				C120864C259F81780011CEBE /* AppDelegate.swift */,
 				C120864E259F81780011CEBE /* SceneDelegate.swift */,
 				C1208655259F81810011CEBE /* Assets.xcassets */,
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				C1208650259F81780011CEBE /* ViewController.swift */,
+				C120866E259FDC760011CEBE /* ResultViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 				C1208651259F81780011CEBE /* ViewController.swift in Sources */,
 				C120864D259F81780011CEBE /* AppDelegate.swift in Sources */,
 				C120864F259F81780011CEBE /* SceneDelegate.swift in Sources */,
+				C120866F259FDC760011CEBE /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
