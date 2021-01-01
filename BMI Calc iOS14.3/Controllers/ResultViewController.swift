@@ -19,11 +19,14 @@ class ResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
+        if bmiValue != nil {
+            bmiLabel.text = bmiValue!
+        }
     }
     
 
     @IBAction func recalculatePressed(_ sender: UIButton) {
+        self.dismiss(animated: true)
     }
     
     
