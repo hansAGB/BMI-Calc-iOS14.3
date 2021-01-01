@@ -56,15 +56,39 @@
 		C120864B259F81780011CEBE /* BMI Calc iOS14.3 */ = {
 			isa = PBXGroup;
 			children = (
+				C1208667259FC6390011CEBE /* Controllers */,
+				C1208666259FC62B0011CEBE /* Views */,
+				C1208665259FC61C0011CEBE /* Models */,
 				C120864C259F81780011CEBE /* AppDelegate.swift */,
 				C120864E259F81780011CEBE /* SceneDelegate.swift */,
-				C1208650259F81780011CEBE /* ViewController.swift */,
-				C1208652259F81780011CEBE /* Main.storyboard */,
 				C1208655259F81810011CEBE /* Assets.xcassets */,
 				C1208657259F81810011CEBE /* LaunchScreen.storyboard */,
 				C120865A259F81810011CEBE /* Info.plist */,
 			);
 			path = "BMI Calc iOS14.3";
+			sourceTree = "<group>";
+		};
+		C1208665259FC61C0011CEBE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C1208666259FC62B0011CEBE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C1208652259F81780011CEBE /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C1208667259FC6390011CEBE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C1208650259F81780011CEBE /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

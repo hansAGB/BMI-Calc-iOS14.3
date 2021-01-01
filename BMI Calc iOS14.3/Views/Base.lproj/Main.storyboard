@@ -54,8 +54,8 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="LlD-Sp-0L6"/>
                                         </constraints>
-                                        <color key="minimumTrackTintColor" red="0.38345503809999998" green="0.37010666730000003" blue="0.6230178475" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <color key="thumbTintColor" red="0.38345503809999998" green="0.37010666730000003" blue="0.6230178475" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="minimumTrackTintColor" red="0.4549019608" green="0.44705882349999998" blue="0.82352941180000006" alpha="0.51797945209999996" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <color key="thumbTintColor" red="0.4549019608" green="0.44705882349999998" blue="0.82352941180000006" alpha="0.51797945209999996" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="heightSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="4rL-wz-8BZ"/>
                                         </connections>
@@ -80,14 +80,14 @@
                                             <constraint firstAttribute="height" constant="21" id="bVG-cg-De0"/>
                                         </constraints>
                                     </stackView>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="0.0" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="Lmu-1S-ZuZ">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="110" minValue="0.0" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="Lmu-1S-ZuZ">
                                         <rect key="frame" x="-2" y="657" width="398" height="61"/>
                                         <color key="tintColor" red="0.63440740110000005" green="0.62578511240000001" blue="0.87853652240000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="7eK-EW-rh5"/>
                                         </constraints>
-                                        <color key="minimumTrackTintColor" red="0.38345503809999998" green="0.37010666730000003" blue="0.6230178475" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <color key="thumbTintColor" red="0.38345503809999998" green="0.37010666730000003" blue="0.6230178475" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="minimumTrackTintColor" red="0.4549019608" green="0.44705882349999998" blue="0.82352941180000006" alpha="0.51797945209999996" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <color key="thumbTintColor" red="0.4549019608" green="0.44705882349999998" blue="0.82352941180000006" alpha="0.51797945209999996" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="weightSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="eGo-vg-dn7"/>
                                         </connections>
@@ -102,6 +102,9 @@
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="calculatePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GpS-4I-CQG"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -119,6 +122,12 @@
                             <constraint firstItem="fMG-fs-deN" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="wGl-ji-TeO"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="heightLabel" destination="mni-Og-NO3" id="apT-bt-5fg"/>
+                        <outlet property="heightSlider" destination="Nf7-vS-3Hu" id="u3a-nN-veD"/>
+                        <outlet property="weightLabel" destination="0RZ-HE-GDH" id="yNy-cq-SKE"/>
+                        <outlet property="weightSlider" destination="Lmu-1S-ZuZ" id="CaX-kC-RSc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
