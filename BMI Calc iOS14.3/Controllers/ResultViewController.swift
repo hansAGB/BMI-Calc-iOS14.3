@@ -10,18 +10,22 @@ import UIKit
 class ResultViewController: UIViewController {
     
     var bmiValue: String?
+    var bmiAdvice: String?
+    var bmiColor: UIColor?
 
     @IBOutlet weak var bmiLabel: UILabel!
     @IBOutlet weak var bmiHintLabel: UILabel!
+    @IBOutlet weak var bmiColorView: UIImageView!
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        if bmiValue != nil {
-            bmiLabel.text = bmiValue!
-        }
+        bmiLabel.text = bmiValue ?? "0.0"
+        bmiHintLabel.text = bmiAdvice ?? "We don't know anything"
+        bmiColorView.backgroundColor = bmiColor ?? #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+        
     }
     
 
